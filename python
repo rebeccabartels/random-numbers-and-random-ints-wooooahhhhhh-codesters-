@@ -1,0 +1,35 @@
+stage.set_background("park")
+
+# sprite = codesters.Sprite("image", x, y)
+
+tim = codesters.Sprite("wizard", -100, -200)
+
+tim.say("Ask me a question, any question!")
+
+stage.wait(2)
+
+question = tim.ask("What is your question?")
+
+tim.say(question)
+
+rand_answer = random.randint(1, 5)
+
+my_display = codesters.Display(rand_answer)
+
+if rand_answer == 1:
+    tim.say("Definitely!")
+
+if rand_answer == 2:
+    tim.say("Outcome unclear. Ask again later.")
+
+if rand_answer == 3:
+    tim.say("Doubtful")
+
+if rand_answer == 4:
+    tim.say("Signs point to yes.")
+
+if rand_answer == 5:
+    tim.say("As I see it, yes.")
+
+
+
